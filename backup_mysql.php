@@ -48,13 +48,10 @@
 
 
 			foreach ($tables as $table => $settings) {
-				if ($settings->where){
-					$where = $settings->where;
-				}
 				dolog("\tProcessing $database.$table");
 				getCreateTable($f,$db,"`$database`.`$table`");
 
-				getInserts($f,$db,"`$database`.`$table`");
+				getInserts($f,$db,"`$database`.`$table`", $settings->where);
 			}
 
 			gzclose($f);
