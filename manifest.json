@@ -3,14 +3,18 @@
 		"host":"localhost",
 		"user":"root",
 		"password":"",
+		"port":"3306"
 		"databases": 
 		{
-			"static": 
+			"std": 
 			{
 			},
 			"companies":{
+				"output": "/var/backups/companies.sql.gz",
 				"tables":
 				{
+					"users":{
+					}
 					"billing": {
 						"where": "`active` = true"
 					}
