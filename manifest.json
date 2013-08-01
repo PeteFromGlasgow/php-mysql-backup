@@ -3,7 +3,7 @@
 		"host":"localhost",
 		"user":"root",
 		"password":"",
-		"port":"3306"
+		"port":"3306",
 		"databases": 
 		{
 			"std": 
@@ -14,7 +14,7 @@
 				"tables":
 				{
 					"users":{
-					}
+					},
 					"billing": {
 						"where": "`active` = true"
 					}
