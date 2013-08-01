@@ -1,0 +1,21 @@
+[
+	{
+		"host":"localhost",
+		"user":"root",
+		"password":"",
+		"databases": 
+		{
+			"static": 
+			{
+			},
+			"companies":{
+				"tables":
+				{
+					"billing": {
+						"where": "`active` = true"
+					}
+				} 
+			}
+		}
+	}
+]
